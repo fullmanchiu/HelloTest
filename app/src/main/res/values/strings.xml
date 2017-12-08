@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HelloTest</string>
+    <string name="notification_title">notification</string>
+    <string name="camera_title">Camera</string>
+    <string name="camera_id_text">id:</string>
+    <string name="time">TIME</string>
+    <string name="broadcast">BROADCAST</string>
+    <string name="intent">INTENT</string>
+    <string name="select_contact_text">select contact</string>
+    <string name="dateutils">DateUtils</string>
+    <string name="ringtone_unknown">unknow</string>
+    <string name="ringtone_silent">slient</string>
+    <string-array name="spingarr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
