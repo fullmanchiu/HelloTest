@@ -9,6 +9,7 @@ import cn.colafans.hellotest.view.DateUtilsDemoActivity;
 import cn.colafans.hellotest.view.IntentActivity;
 import cn.colafans.hellotest.view.NotificationActivity;
 import cn.colafans.hellotest.view.PreviewActivity;
+import cn.colafans.hellotest.view.RvSampleActivity;
 import cn.colafans.hellotest.view.TimeActivity;
 
 /**
@@ -49,6 +50,11 @@ public class IntentFactory {
 
     public static Intent getDateUtilsIntent(Context mContext) {
         intent = new Intent(mContext, DateUtilsDemoActivity.class);
+        return intent;
+    }
+
+    public static Intent getRvIntent(Context mContext) {
+        intent = new Intent(mContext, RvSampleActivity.class);
         return intent;
     }
 }

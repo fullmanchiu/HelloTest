@@ -10,6 +10,7 @@
     <string name="dateutils">DateUtils</string>
     <string name="ringtone_unknown">unknow</string>
     <string name="ringtone_silent">slient</string>
+    <string name="rv">RV SAMPLE</string>
     <string-array name="spingarr">
         <item>0</item>
         <item>1</item>

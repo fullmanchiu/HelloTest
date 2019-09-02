@@ -3,7 +3,6 @@ package cn.colafans.hellotest.view;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.AudioManager;
 import android.os.Bundle;
@@ -18,7 +17,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     AudioManager mAudioManager;
     ComponentName mbCN;
     private Context mContext = this;
-    private Button mNotification, mCamera, mTime, mBroadCast, mIntent, mDateUtils;
+    private Button mNotification, mCamera, mTime, mBroadCast, mIntent, mDateUtils, btnRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +53,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mBroadCast = findViewById(R.id.btn_broadcast);
         mIntent = findViewById(R.id.btn_intent);
         mDateUtils = findViewById(R.id.btn_date_utils);
+        btnRv = findViewById(R.id.btn_rv);
     }
 
     void initListener() {
@@ -63,6 +63,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mBroadCast.setOnClickListener(this);
         mIntent.setOnClickListener(this);
         mDateUtils.setOnClickListener(this);
+        btnRv.setOnClickListener(this);
     }
 
     @Override
@@ -95,6 +96,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_date_utils:
                 startActivity(IntentFactory.getDateUtilsIntent(mContext));
+                break;
+            case R.id.btn_rv:
+                startActivity(IntentFactory.getRvIntent(mContext));
+                break;
             default:
         }
     }
